@@ -39,8 +39,8 @@
         for(chapter_num=1; chapter_num<total_chapters; chapter_num++)
         if(doesFileExist(chapter_num)){
             var episode_num = chapter_num-1
-            if(doesFileExist('/unholy-blood/'+chapter_num)){
-                document.getElementById("links").innerHTML = document.getElementById("links").innerHTML +'<br>'+'<a href="/unholy-blood/'+chapter_num+'/">Unholy Blood, Chapter '+chapter_num+'</a>';
+            if(doesFileExist(chapter_num)){
+                document.getElementById("links").innerHTML = document.getElementById("links").innerHTML +'<br>'+'<a href="'+chapter_num+'/">Unholy Blood, Chapter '+chapter_num+'</a>';
             }        
         }
         else{
